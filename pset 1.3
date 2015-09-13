@@ -1,0 +1,9 @@
+major = lazor = s[0] 
+for i in range(1, len(s)): 
+    if s[i] >= major[-1]: 
+        major += s[i] 
+        if len(major) > len(lazor): 
+            lazor = major 
+    else: 
+        major = s[i] 
+print 'Longest substring in alphabetical order is:', lazor
