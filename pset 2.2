@@ -1,0 +1,9 @@
+minPayment = 0       
+updatedBalance = balance    
+while updatedBalance > 0:    
+     updatedBalance = balance    
+     minPayment += 10  
+     for month in range(12):    
+         updatedBalance =updatedBalance - minPayment    
+         updatedBalance = updatedBalance + updatedBalance*(annualInterestRate / 12.0)     
+print("Lowest payment:"+str(round(minPayment,2)) )  
